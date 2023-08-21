@@ -16,16 +16,16 @@
       <a-scene mindar-image="imageTargetSrc: https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.2/examples/image-tracking/assets/card-example/card.mind;  uiError:no; uiLoading:no; uiScanning:no" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
         <a-assets>
       <img id="card" src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEVUeZYu0NDr3Nkw%2B%2F5Af5QGcSdpiQ8E7merXssUOW3XRjfX2UJRxJ21jB5MXevtwYslT7PkAz1NqFNLsIgB4sw%2F7VD8tJy1EuNLv6iONgCdr55JxpYvE2IssXyOFxxcqQ7CItCxCLBAJrz1aXC%2Bi1kmfmOMdxQ760SVBXVPAoHuLOL405tDWxaCN48rdjNoNzaaZCRkgbAu8hD22n%2BiYxv7qXere0f9FU0liImwr9hs1Kz8XlqgXpg7kNEmoq76bfnYWjLU3ZD4YREhEct86bxgLccqqMaljiO8XN96jdWPtsBfGzbUtEUFSiWXaIJSaxR660LJNse24mjqIOub2bQBcyKjP251LbtECJQi%2Fl%2FEABcWvbwLuUHkPMOYD7QNGpczg14rIUgAGeSmXwFuhmSxK2Mzf8RKrEkx%2FFZTfTs5OSVNwyqqeFMXvyqv63LW3NBps3xT0iUptt8ATLtOcuGF7klsk9984uMRxWmAE2AgatUHRnHBMex0BhqMxVxLZ5g9MZ5Aao3jJ92iwFERoVzA2nCjHDLlwHaeNf2ODi4saCY3lS0jyWaZpXW6ULIv%2FWWjR46Wzx8H2XGx67R%2Bx3%2B4KW7roLWTpQFAG%2Bh9X3U19wrY%2B4fk6oouslMCsQ264aWFYaUc%2Bftz%2FlfL%2BL%2F6W2GBPqsdQ4DE6J9YLd5B&sz=w512" />
-      <!-- <a-asset-item id="avatarModel" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.2/examples/image-tracking/assets/card-example/softmind/scene.gltf"></a-asset-item> -->
+      <a-asset-item id="avatarModel" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.2/examples/image-tracking/assets/card-example/softmind/scene.gltf"></a-asset-item>
         </a-assets>
   <div style="width: 100px;height: 100px;">
         <a-camera position="0 0 0" look-controls="enabled: false" style="width: 20px; height: 20px"></a-camera>
     </div> 
         <a-entity mindar-image-target="targetIndex: 0">
           <a-plane src="#card" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane>
-          <!-- <a-gltf-model rotation="0 0 0 " position="0 0 0.1" scale="0.005 0.005 0.005" src="#avatarModel"
+          <a-gltf-model rotation="0 0 0 " position="0 0 0.1" scale="0.005 0.005 0.005" src="#avatarModel"
             animation="property: position; to: 0 0.1 0.1; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate"
-          > -->
+          >
         </a-entity>
       </a-scene>
     </body>
