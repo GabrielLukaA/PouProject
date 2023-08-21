@@ -1,0 +1,11 @@
+Model Information:
+* title:	Caneta Azul
+* source:	https://sketchfab.com/3d-models/caneta-azul-0c853169345c4b2885dd57ea97f1c0cc
+* author:	leomarques1905 (https://sketchfab.com/leomarques1905)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Caneta Azul" (https://sketchfab.com/3d-models/caneta-azul-0c853169345c4b2885dd57ea97f1c0cc) by leomarques1905 (https://sketchfab.com/leomarques1905) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
