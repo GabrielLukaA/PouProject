@@ -10,11 +10,11 @@
 <body>
     <div
         style="height: 50%; width: 100%; background-color: aqua; display: flex; justify-content: center; gap: 32px; padding-top: 48px;">
-        <img src="meunomeébruno.png" width="120vw" height="120vh" alt="">
-        <img src="meunomeébruno.png" width="120vw" height="120vh" alt="">
-        <img src="meunomeébruno.png" width="120vw" height="120vh" alt="">
-        <img src="meunomeébruno.png" width="120vw" height="120vh" alt="">
-        <img src="meunomeébruno.png" width="120vw" height="120vh" alt="">
+        <img id="coracaoCheio1" src="meunomeébruno.png" width="120vw" height="120vh" alt="" onclick="teste()">
+        <img id="coracaoCheio2" src="meunomeébruno.png" width="120vw" height="120vh" alt="">
+        <img id="coracaoCheio3" src="meunomeébruno.png" width="120vw" height="120vh" alt="">
+        <img id="coracaoCheio4" src="meunomeébruno.png" width="120vw" height="120vh" alt="">
+        <img id="coracaoCheio5" src="meunomeébruno.png" width="120vw" height="120vh" alt="">
     </div>
     <a-scene
         mindar-image="imageTargetSrc: https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.2/examples/image-tracking/assets/card-example/card.mind;  uiError:no; uiLoading:no; uiScanning:no"
@@ -30,6 +30,7 @@
             <a-gltf-model src="#manoelGomes"rotation="0 0 0 " position="0 -0.25 0">
         </a-entity>
     </a-scene>
+    <script src="js.js"></script>
 </body>
 
 </html>
