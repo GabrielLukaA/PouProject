@@ -2,9 +2,10 @@
 let vida = 200;
 
 const barraVida = document.querySelector('#vida');
-const examplePlane = document.querySelector('#example-plane');
-console.log(barraVida);
+let examplePlane = document.querySelector('#example-plane');
+console.log(barraVida.style);
 examplePlane.addEventListener("click", event => {
+    examplePlane = document.querySelector('#example-plane');
 vida-=10;
 console.log(barraVida);
 
