@@ -3,7 +3,7 @@ let vida = 200;
 let dano = 10;
 let nivelNumber = 1;
 
-var interval;
+var interval = null;
 let sec = 30;
 const tempo = document.querySelector('#tempo');
 const barraVida = document.querySelector('#vida');
@@ -12,7 +12,9 @@ const nivel = document.querySelector("#nivel");
 const exampleTarget = document.querySelector("#target")
 
 exampleTarget.addEventListener("targetFound", event => {
-    interval = setInterval(aumenta, 1000);
+    if (interval == null){
+        interval = setInterval(aumenta, 1000);
+    }
     barraVida.style.width = "" + vida + 'px'
 })
 
@@ -71,7 +73,7 @@ examplePlane.addEventListener("click", event => {
         dano = dano / 100 * 75
         nivel.innerText = nivelNumber + 1
         nivelNumber++;
-        sec = 30;  
+        sec = 31;  
         vida = 200;
         nivel.innerHTML(nivelNumber + 1);
         clearInterval(interval)
