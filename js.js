@@ -14,7 +14,7 @@ let audio = new Audio("canetaazul.mp3")
 let audioOlha = new Audio("olha.mp3")
 
 exampleTarget.addEventListener("targetFound", event => {
-    audioOlha.muted();
+    audioOlha.muted = true;
     audio.pause();
     audio = new Audio("canetaazul.mp3")
     alert("opa")
