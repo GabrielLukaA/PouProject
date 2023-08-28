@@ -18,6 +18,7 @@ exampleTarget.addEventListener("targetFound", event => {
     audioOlha = new Audio("olha.mp3")
     audio.pause();
     audio = new Audio("canetaazul.mp3")
+    alert("opa")
     if (interval == null) {
         interval = setInterval(aumenta, 1000);
     }
