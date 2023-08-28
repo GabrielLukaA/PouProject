@@ -26,6 +26,7 @@ exampleTarget.addEventListener("targetFound", event => {
 
 function aumenta() {
     sec--;
+    alert(sec)
     tempo.innerText = "" + sec;
     if (sec == 0) {
         clearInterval(interval);
