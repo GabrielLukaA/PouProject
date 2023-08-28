@@ -3,7 +3,7 @@ let vida = 200;
 let dano = 10;
 let nivelNumber = 1;
 
-var interval = null;
+let interval = null;
 let sec = 30;
 const tempo = document.querySelector('#tempo');
 const barraVida = document.querySelector('#vida');
