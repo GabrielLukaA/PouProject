@@ -31,7 +31,7 @@ function aumenta() {
     tempo.innerText = "" + sec;
     if (sec == 0) {
         clearInterval(interval);
-        audioOlha.play();
+        // audioOlha.play();
         switch (nivelNumber) {
             case 1:
                 alert("Mas já?")
