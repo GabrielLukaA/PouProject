@@ -29,6 +29,8 @@ function aumenta() {
     tempo.innerText = "" + sec;
     if (sec == 0) {
         clearInterval(interval);
+
+        audioOlha = new Audio("olha.mp3")
         audioOlha.play();
         switch (nivelNumber) {
             case 1:
