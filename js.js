@@ -14,8 +14,12 @@ const audio = new Audio("canetaazul.mp3")
 const audioOlha = new Audio("olha.mp3")
 
 exampleTarget.addEventListener("targetFound", event => {
-    audioOlha = null;
+    audioOlha.pause();
+    audioOlha.currentTime = 0;
+    audio.pause();
+    audio.currentTime = 0;
     alert("entrei funcao found")
+    audio = null;
     if (interval == null) {
         alert("entrei verificadcao")
         interval = setInterval(aumenta, 1000);
