@@ -12,7 +12,7 @@ const nivel = document.querySelector("#nivel");
 const exampleTarget = document.querySelector("#target")
 
 exampleTarget.addEventListener("targetFound", event => {
-    if (interval == null){
+    if (interval == null) {
         interval = setInterval(aumenta, 1000);
     }
     barraVida.style.width = "" + vida + 'px'
@@ -33,22 +33,22 @@ function aumenta() {
                 alert("Não aguentou a pontada?")
                 break;
             case 3:
-                alert("")
+                alert("CANETA AZULLLLL")
                 break;
             case 4:
-                alert("")
+                alert("ninguém liga pra você, tente de novo.")
                 break;
             case 5:
-                alert("")
+                alert("Famoso aluno nota 7")
                 break;
             case 6:
-                alert("")
+                alert("Pode clicar mas da minha caneta não vai escapar")
                 break;
             case 7:
                 alert("Você foi caneta azulado.")
                 break;
             case 8:
-                alert("")
+                alert("Nadou nadou e na tinta se afogou")
                 break;
             case 9:
                 alert("Fraco.")
@@ -57,7 +57,11 @@ function aumenta() {
                 alert("30 segundos é o suficiente ela disse.")
                 break;
         }
-
+        nivelNumber = 1;
+        nivel.innerText = nivelNumber
+        dano = 10;
+        barraVida.style.width = 0 + "px";
+        vida = 200;
     }
 }
 
@@ -69,17 +73,27 @@ examplePlane.addEventListener("click", event => {
     vida -= dano;
     barraVida.style.width = "" + vida + "px";
     if (vida <= 0) {
+        if (nivelNumber == 10) {
+            alert("Parabéns, você ganhou a caneta do Blue Pen.")
+            nivelNumber = 1;
+            nivel.innerText = nivelNumber
+            dano = 10;
+            barraVida.style.width = 0 + "px";
+            vida = 200;
+        } else {
 
-        dano = dano / 100 * 75
-        nivel.innerText = nivelNumber + 1
-        nivelNumber++;
-        sec = 31;  
-        vida = 200;
-        nivel.innerHTML(nivelNumber + 1);
-        clearInterval(interval)
-              
-        tempo.innerText = sec;
-        interval = setInterval(aumenta, 1000);
+            dano = dano / 100 * 75
+            nivel.innerText = nivelNumber + 1
+            nivelNumber++;
+            sec = 31;
+            vida = 200;
+            nivel.innerHTML(nivelNumber + 1);
+            clearInterval(interval)
+
+            tempo.innerText = sec;
+            interval = setInterval(aumenta, 1000);
+
+        }
 
     }
 });

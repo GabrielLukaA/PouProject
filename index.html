@@ -10,11 +10,6 @@
 <body style="display:flex; flex-direction:column; width:100%; align-items:center;">
     <div
         style="height: 10%; width: auto; max-width: max-content; display: flex; flex-direction: column; align-items: center; gap: 32px; padding-top: 48px; background-color: whitesmoke; border-radius: 8px;">
-        <!-- <img id="coracaoCheio1" src="meunomeébruno.png" width="120vw" height="120vh" alt="" onclick="teste()">
-        <img id="coracaoCheio2" src="meunomeébruno.png" width="120vw" height="120vh" alt="">
-        <img id="coracaoCheio3" src="meunomeébruno.png" width="120vw" height="120vh" alt="">
-        <img id="coracaoCheio4" src="meunomeébruno.png" width="120vw" height="120vh" alt="">
-        <img id="coracaoCheio5" src="meunomeébruno.png" width="120vw" height="120vh" alt=""> -->
 
         <div style="display: flex; justify-content: center; align-items:center; width: 100%; gap: 16px; padding: 16px;">
             <p style="font-size: 36px;">Nível</p>
@@ -25,8 +20,8 @@
         </div>
     </div>
     <div style="width: 100%;display: flex; justify-content: center; height: 45%; align-items: center;">
-        <div style="display: flex; justify-content:start;">
-            <div id="vida" style="width: 0px; height:32px; background-color: red;"></div>
+        <div style="display: flex; justify-content:center;">
+            <div id="vida" style="width: 0px; height:32px; background-color: red; justify-self: start; display: flex; border-radius: 4px;"></div>
         </div>
 
     </div>
@@ -45,7 +40,7 @@
         </div>
         <a-entity mindar-image-target="targetIndex: 0">
             <a-gltf-model id="example-plane" class="clickable" src="#manoelGomes" rotation="0 0 0 "
-                position="0 -0.25 0">
+                position="0 -0.5 0">
         </a-entity>
     </a-scene>
 
