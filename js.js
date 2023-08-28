@@ -4,7 +4,7 @@ let dano = 10;
 let nivelNumber = 1;
 
 var interval
-var sec = 30;
+let sec = 30;
 const tempo = document.querySelector('#tempo');
 const barraVida = document.querySelector('#vida');
 let examplePlane = document.querySelector('#example-plane');
@@ -72,7 +72,7 @@ examplePlane.addEventListener("click", event => {
         nivelNumber++;
         vida = 200;
         nivel.innerHTML(nivelNumber + 1);
-        alert("Parabéns! Passou de nível.")
+        alert("Parabéns! Passou de nível.");
         sec = 30;
         tempo.innerText = sec;
     }
