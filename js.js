@@ -14,8 +14,8 @@ const audio = new Audio("canetaazul.mp3")
 const audioOlha = new Audio("olha.mp3")
 
 exampleTarget.addEventListener("targetFound", event => {
-    audioOlha.pause();
-    audio.pause();
+    audioOlha = null;
+    audio = null;
     if (interval == null) {
         interval = setInterval(aumenta, 1000);
     }
@@ -29,6 +29,7 @@ function aumenta() {
     tempo.innerText = "" + sec;
     if (sec == 0) {
         clearInterval(interval);
+        audioOlha = new Audio("olha.mp3");
         audioOlha.play();
         switch (nivelNumber) {
             case 1:
@@ -82,6 +83,7 @@ examplePlane.addEventListener("click", event => {
     barraVida.style.width = "" + vida + "px";
     if (vida <= 0) {
         if (nivelNumber == 10) {
+           audio = new Audio("canetaazul.mp3")
             alert("Parabéns, você ganhou a caneta do Blue Pen.")
             audio.play()
             nivelNumber = 1;
