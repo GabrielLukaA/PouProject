@@ -73,8 +73,6 @@ examplePlane.addEventListener("click", event => {
         nivelNumber++;
         vida = 200;
         nivel.innerHTML(nivelNumber + 1);
-        alert("Parabéns! Passou de nível.");
-
         clearInterval(interval)
         sec = 30;        
         tempo.innerText = sec;
