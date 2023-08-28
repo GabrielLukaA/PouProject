@@ -9,7 +9,7 @@ const tempo = document.querySelector('#tempo');
 const barraVida = document.querySelector('#vida');
 let examplePlane = document.querySelector('#example-plane');
 const nivel = document.querySelector("#nivel");
-const exampleTarget = document.querySelector("#manoelGomes")
+const exampleTarget = document.querySelector("#target")
 
 examplePlane.addEventListener("targetFound", event => {
     interval = setInterval(aumenta, 1000);
