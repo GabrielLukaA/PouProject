@@ -22,6 +22,7 @@ function aumenta() {
     sec--;
     tempo.innerText = "" + sec;
     if (sec == 0) {
+        clearInterval(interval);
         switch (nivelNumber) {
             case 1:
                 alert("Mas já?")
@@ -73,7 +74,10 @@ examplePlane.addEventListener("click", event => {
         vida = 200;
         nivel.innerHTML(nivelNumber + 1);
         alert("Parabéns! Passou de nível.");
+
+        clearInterval(interval)
         sec = 30;
+        interval = setInterval(aumenta, 1000);
         tempo.innerText = sec;
     }
 });
