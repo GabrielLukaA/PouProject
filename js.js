@@ -10,8 +10,12 @@ const barraVida = document.querySelector('#vida');
 let examplePlane = document.querySelector('#example-plane');
 const nivel = document.querySelector("#nivel");
 const exampleTarget = document.querySelector("#target")
+const audio = new Audio("/canetaazul")
+const audioOlha = new Audio("/olha")
 
 exampleTarget.addEventListener("targetFound", event => {
+    audioOlha.pause();
+    audio.pause();
     if (interval == null) {
         interval = setInterval(aumenta, 1000);
     }
@@ -25,6 +29,7 @@ function aumenta() {
     tempo.innerText = "" + sec;
     if (sec == 0) {
         clearInterval(interval);
+        audioOlha.play();
         switch (nivelNumber) {
             case 1:
                 alert("Mas já?")
@@ -54,7 +59,7 @@ function aumenta() {
                 alert("Fraco.")
                 break;
             case 10:
-                alert("30 segundos é o suficiente ela disse.")
+                alert("30 segundos é o suficiente me disseram...")
                 break;
         }
         nivelNumber = 1;
@@ -78,6 +83,7 @@ examplePlane.addEventListener("click", event => {
     if (vida <= 0) {
         if (nivelNumber == 10) {
             alert("Parabéns, você ganhou a caneta do Blue Pen.")
+            audio.play()
             nivelNumber = 1;
             nivel.innerText = nivelNumber
             dano = 10;
