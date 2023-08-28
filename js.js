@@ -14,6 +14,7 @@ const audio = new Audio("canetaazul.mp3")
 const audioOlha = new Audio("olha.mp3")
 
 exampleTarget.addEventListener("targetFound", event => {
+    audioOlha = null;
     alert("entrei funcao found")
     if (interval == null) {
         alert("entrei verificadcao")
