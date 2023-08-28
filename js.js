@@ -10,12 +10,14 @@ const barraVida = document.querySelector('#vida');
 let examplePlane = document.querySelector('#example-plane');
 const nivel = document.querySelector("#nivel");
 const exampleTarget = document.querySelector("#target")
-const audio = new Audio("canetaazul.mp3")
+let audio = new Audio("canetaazul.mp3")
 let audioOlha = new Audio("olha.mp3")
 
 exampleTarget.addEventListener("targetFound", event => {
-    audioOlha = null;
-    
+    // audioOlha.pause();
+    audioOlha = new Audio("olha.mp3")
+    // audio.pause();
+    audio = new Audio("canetaazul.mp3")
     if (interval == null) {
         interval = setInterval(aumenta, 1000);
     }
@@ -29,8 +31,6 @@ function aumenta() {
     tempo.innerText = "" + sec;
     if (sec == 0) {
         clearInterval(interval);
-
-        audioOlha = new Audio("olha.mp3")
         audioOlha.play();
         switch (nivelNumber) {
             case 1:
