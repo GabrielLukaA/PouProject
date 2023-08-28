@@ -10,8 +10,8 @@ const barraVida = document.querySelector('#vida');
 let examplePlane = document.querySelector('#example-plane');
 const nivel = document.querySelector("#nivel");
 const exampleTarget = document.querySelector("#target")
-const audio = new Audio("/canetaazul")
-const audioOlha = new Audio("/olha")
+const audio = new Audio("canetaazul.mp3")
+const audioOlha = new Audio("olha.mp3")
 
 exampleTarget.addEventListener("targetFound", event => {
     audioOlha.pause();
