@@ -14,9 +14,9 @@ let audio = new Audio("canetaazul.mp3")
 let audioOlha = new Audio("olha.mp3")
 
 exampleTarget.addEventListener("targetFound", event => {
-    // audioOlha.pause();
+    audioOlha.pause();
     audioOlha = new Audio("olha.mp3")
-    // audio.pause();
+    audio.pause();
     audio = new Audio("canetaazul.mp3")
     if (interval == null) {
         interval = setInterval(aumenta, 1000);
