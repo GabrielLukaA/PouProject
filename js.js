@@ -18,10 +18,7 @@ exampleTarget.addEventListener("targetFound", event => {
     audioOlha.currentTime = 0;
     audio.pause();
     audio.currentTime = 0;
-    alert("entrei funcao found")
-    audio = null;
     if (interval == null) {
-        alert("entrei verificadcao")
         interval = setInterval(aumenta, 1000);
     }
     barraVida.style.width = "" + vida + 'px'
@@ -31,7 +28,6 @@ exampleTarget.addEventListener("targetFound", event => {
 
 function aumenta() {
     sec--;
-    alert(sec)
     tempo.innerText = "" + sec;
     if (sec == 0) {
         clearInterval(interval);
