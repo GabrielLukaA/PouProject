@@ -11,7 +11,7 @@ let examplePlane = document.querySelector('#example-plane');
 const nivel = document.querySelector("#nivel");
 const exampleTarget = document.querySelector("#target")
 
-examplePlane.addEventListener("targetFound", event => {
+exampleTarget.addEventListener("targetFound", event => {
     interval = setInterval(aumenta, 1000);
     barraVida.style.width = "" + vida + 'px'
 })
@@ -20,7 +20,7 @@ examplePlane.addEventListener("targetFound", event => {
 
 function aumenta() {
     sec--;
-    tempo.innerText = sec;
+    tempo.innerText = "" + sec;
     if (sec == 0) {
         switch (nivelNumber) {
             case 1:
