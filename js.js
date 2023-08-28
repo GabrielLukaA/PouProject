@@ -15,8 +15,10 @@ const audioOlha = new Audio("olha.mp3")
 
 exampleTarget.addEventListener("targetFound", event => {
     audioOlha = null;
+    alert("entrei funcao found")
     audio = null;
     if (interval == null) {
+        alert("entrei verificadcao")
         interval = setInterval(aumenta, 1000);
     }
     barraVida.style.width = "" + vida + 'px'
