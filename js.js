@@ -62,6 +62,9 @@ function aumenta() {
         dano = 10;
         barraVida.style.width = 0 + "px";
         vida = 200;
+        interval = null;
+        sec = 30;
+        tempo.innerText = sec;
     }
 }
 
